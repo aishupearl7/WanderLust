@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wander Cabs</title>
+  <style>
+    body {
+      font-family:Papyrus;
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input[type="text"], input[type="number"], select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .btn {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .price-table {
+      margin-top: 20px;
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .price-table th, .price-table td {
+      padding: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .price-table th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Wander Cabs</h1>
+    <form>
+      <label for="pickup">Pickup Point:</label>
+      <input type="text" id="pickup" name="pickup" required>
+
+      <label for="drop">Drop Point:</label>
+      <input type="text" id="drop" name="drop" required>
+
+      <label for="cab-type">Cab Type:</label>
+      <select id="cab-type" name="cab-type">
+        <option value="standard">Standard</option>
+        <option value="deluxe">Deluxe</option>
+        <option value="luxury">Luxury</option>
+      </select>
+      <div class="button"><br><br>
+        <a href="C:\Users\Aishwarya\OneDrive\Desktop\Websites\flightpayment.html" class="btn">Book Now!</a>
+      </div>
+
+
+    </form>
+
+    <table class="price-table">
+      <tr>
+        <th>Cab Type</th>
+        <th>Price per kilometer</th>
+      </tr>
+      <tr>
+        <td>Standard</td>
+        <td>$0.50</td>
+      </tr>
+      <tr>
+        <td>Deluxe</td>
+        <td>$0.75</td>
+      </tr>
+      <tr>
+        <td>Luxury</td>
+        <td>$1.00</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
